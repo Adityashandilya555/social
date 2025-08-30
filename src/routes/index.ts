@@ -119,7 +119,7 @@ router.get('/docs', (req, res) => {
 });
 
 // Catch-all for undefined API routes
-router.use('*', (req, res) => {
+router.use('/*', (req, res) => {
   res.status(404).json({
     success: false,
     message: `API endpoint not found: ${req.originalUrl}`,
