@@ -1,0 +1,33 @@
+{
+  "name": "CampusConnect",
+  "description": "A React Native app for campus community connection",
+  "repository": "https://github.com/yourusername/CampusConnect",
+  "keywords": ["react-native", "campus", "community", "social"],
+  "env": {
+    "NODE_ENV": {
+      "description": "Node environment",
+      "value": "production"
+    },
+    "MONGO_URI": {
+      "description": "MongoDB Atlas connection string",
+      "required": true
+    },
+    "API_BASE_URL": {
+      "description": "Base URL for API endpoints",
+      "required": false
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "hobby"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "stack": "heroku-22",
+  "addons": []
+}
